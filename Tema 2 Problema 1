@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>DISTANTA DINTRE 2 PUNCTE</h2>
+<h3>Coordonatele A(x,y)?<h3>
+<input type="number" id="a" value="">
+<input type="number" id="b" value="">
+<h3>Coordonatele B(x,y)?<h3>
+<input type="number" id="c" value="">
+<input type="number" id="d" value="">
+
+<p>Click pe tab-ul de mai jos pentru a calcula din distanta.</p>
+
+<button onclick="distanta()">Distanta</button>
+
+<p id="distanta"></p>
+
+<script>
+function distanta() {
+  var y = parseInt(document.getElementById('a').value);
+  var z = parseInt(document.getElementById('b').value);
+  var q = parseInt(document.getElementById('c').value);
+  var w = parseInt(document.getElementById('d').value);
+  var putereA = Math.pow(q-y, 2);
+  var putereB = Math.pow(w-z, 2);
+  var suma= putereA + putereB;
+  var distanta = Math.sqrt(suma);
+  document.getElementById("distanta").innerHTML = distanta;
+}
+</script>
+</body>
+</html>
