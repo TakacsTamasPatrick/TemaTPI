@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+ <h2>Apasa</h2>
+ <p>Apasa pentru a vedea numerele pare</p>
+ <button oneclick="Numar par()">Vector<button>
+ <script>
+ function NumarPar() {
+ var arr=[...Array(100).keys()];
+ for (var i=0; i=arr.lenght; i++) {
+ if (arr[i]%2==0) {
+ document.writeln(arr[i]+"</>");
+ }}}
+ </script>
+ 
+ </body>
+ </html>
