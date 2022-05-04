@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html>
+<body>
+
+<h2>OPERATII ARITMETICE</h2>
+<h3>Valoarea lui a si b?<h3>
+<input type="number" id="a" value="">
+<input type="number" id="b" value="">
+
+<p>Click pe un tab pentru a efectua operatiunea dorita.</p>
+
+<button onclick="adunare()">Adunare</button>
+
+<p id="adunare"></p>
+
+<script>
+function adunare() {
+  var y = parseInt(document.getElementById('a').value);
+  var z = parseInt(document.getElementById('b').value);
+  var x = y+z;
+  document.getElementById("adunare").innerHTML = x;
+}
+</script>
+
+<button onclick="scadere()">Scadere</button>
+
+<p id="scadere"></p>
+
+<script>
+function scadere() {
+  var a = parseInt(document.getElementById('a').value);
+  var b = parseInt(document.getElementById('b').value);
+  var y = a-b;
+  document.getElementById("scadere").innerHTML = y;
+}
+</script>
+
+<button onclick="Inmultire()">Inmultire</button>
+
+<p id="Inmultire"></p>
+
+<script>
+function Inmultire() {
+  var a = parseInt(document.getElementById('a').value);
+  var b = parseInt(document.getElementById('b').value);
+  var x = a*b;
+  document.getElementById("Inmultire").innerHTML = x;
+}
+</script>
+
+<button onclick="Impartire()">Impartire</button>
+
+<p id="Impartire"></p>
+
+<script>
+function Impartire() {
+  var a = parseInt(document.getElementById('a').value);
+  var b = parseInt(document.getElementById('b').value);
+  var y = a/b;
+  document.getElementById("Impartire").innerHTML = y;
+}
+</script>
+
+</body>
+</html>
