@@ -1,0 +1,17 @@
+var x = ' ';
+var y = ' ';
+var z = ' ';
+
+function ecuatiedolar (x,y,z)
+{
+if (x*y=z)
+a='x*y';
+if (x/y=z)
+a='x/y';
+if (x+y=z)
+a='x+y';
+if (x-y=z)
+a='x-y';
+}
+
+return a;
